@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+
+        <style>
+            .navbar{
+                background-color: rgb(88, 86, 86);
+                /* background-color: black; */
+                border-radius: 12px;
+            }
+            .navbar li{
+                float: left;
+                list-style: none;
+                padding: 5px;
+                margin: 10px 10px;
+                cursor: pointer;
+            }
+            .navbar ul{
+                overflow: auto;
+            }
+            .navbar li a{
+                text-decoration: none;
+                /* color: black; */
+                color: white;
+            }
+            .navbar li a:hover{
+                /* border: 2px solid rgb(66, 64, 64);
+                background-color: #75787e; */
+                color: pink;
+            }
+            /* .navbar li:hover{
+                border: 2px solid rgb(66, 64, 64);
+                background-color: #75787e;
+            } */
+            .Search{
+                float:right;
+                padding: 6px;
+                margin: 8px 25px;
+            }
+            .navbar input{
+                border: 2px solid pink;
+                border-radius: 5px;
+                width: 7pc;
+            }
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li style="margin-left: 0mm;"> <a href="#" >Home</a> </li>
+                    <li> <a href="#">File</a> </li>
+                    <li> <a href="#">Edit</a> </li>
+                    <li> <a href="#">Selection</a> </li>
+                    <!-- <li> <a href="#">View</a> </li>
+                    <li> <a href="#">Go</a> </li>
+                    <li> <a href="#">Run</a> </li>
+                    <li> <a href="#">Terminal</a> </li> -->
+                    <div class="Search">
+                        <input type="text" name="serach" it="serach" placeholder="Search">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+
+
+
+</html>
