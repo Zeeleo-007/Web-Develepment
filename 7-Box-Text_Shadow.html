@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body{
+                background-color: black;
+            }
+            .container{
+                display: flex;
+            }
+            .card{
+                padding: 12px;
+                margin: 8px;
+
+                /* border: 3px dashed black; */
+                background-color: orange;
+
+                /* box-shadow: ofset-x ofset-y blur-radius spread-radius color;  */
+                box-shadow: 3px 3px rgb(194, 145, 55);
+                box-shadow: -3px -3px rgb(194, 145, 55);
+                box-shadow: 3px 3px 16px rgb(194, 145, 55);
+                box-shadow: 3px 3px 16px 12px rgb(194, 145, 55);
+                box-shadow: inset 3px 3px 16px 12px rgb(194, 145, 55);
+                box-shadow: 3px 3px red, 6px 6px green;
+            }
+            header::before{
+                background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+                content: '';
+                position: absolute;
+                top:0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.4;
+            }
+            .card p{
+                text-shadow: 1px 1px wheat;
+                text-shadow: 3px 4px 2px wheat;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header>            </header>
+
+            <div class="card">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos cumque, aperiam ullam eligendi ipsum maiores quam numquam harum, iste facilis unde. Maiores quo sapiente culpa quas necessitatibus esse harum. Quae eum reprehenderit eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque quisquam voluptatum autem voluptates. Ad at numquam accusamus blanditiis iusto dolorum eius. Hic, minima! Quos veniam ut enim obcaecati quas optio aspernatur quasi! Possimus earum ad saepe excepturi accusamus labore. Cumque quas laboriosam tempore explicabo id, numquam corrupti.
+                </p>  
+                <h2>Card1</h2>    
+            </div>
+
+            <div class="card">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos cumque, aperiam ullam eligendi ipsum maiores quam numquam harum, iste facilis unde. Maiores quo sapiente culpa quas necessitatibus esse harum. Quae eum reprehenderit eveniet.
+                </p> 
+                <h2>Card2</h2>    
+            </div>
+
+            <div class="card">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos cumque, aperiam ullam eligendi ipsum maiores quam numquam harum, iste facilis unde. Maiores quo sapiente culpa quas necessitatibus esse harum. Quae eum reprehenderit eveniet.
+                </p>  
+                <h2>Card3</h2>    
+            </div>
+
+            <div class="card">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos cumque, aperiam ullam eligendi ipsum maiores quam numquam harum, iste facilis unde. Maiores quo sapiente culpa quas necessitatibus esse harum. Quae eum reprehenderit eveniet.
+                </p>  
+                <h2>Card4</h2>    
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
