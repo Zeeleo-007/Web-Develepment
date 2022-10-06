@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            :root{
+                --color-box: orange;
+                --primary-color: orangered;
+                --secondary-color: green;
+                --maxw: 900px
+            }
+            body{
+                background-color: var(--primary-color);
+            }
+            .box{
+                display: flex;
+                border: 2px dashed black;
+                width: 200px;
+                height: 200px;
+                background-color: var(--color-box);
+                margin: 2px 3px;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                max-width: var(--maxw);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                border: 3px dashed green;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box">Box-1</div>
+            <div class="box">Box-2</div>
+            <div class="box">Box-3</div>
+            <div class="box">Box-4</div>
+        </div>
+    </body>
+
+</html>
