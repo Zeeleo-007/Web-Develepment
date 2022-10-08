@@ -164,15 +164,16 @@ section p{
     margin: 5px;
     display: flex;
     justify-content: center;
-    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
     color: wheat;
-
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .block .shar li{
     color:wheat;
     border:none;
     padding: 5px;
-
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    
 }
