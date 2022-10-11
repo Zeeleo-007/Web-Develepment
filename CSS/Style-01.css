@@ -64,7 +64,6 @@ header::before{
 .mid ul li{
     list-style: none;
     font-weight: bold;
-    
     /* border: 1px solid red; */
 }
 
@@ -100,13 +99,12 @@ section{
     text-align: center;
     justify-content: center;
     color: white;
-    padding: 32px;
+    /* padding: 32px; */
     margin: 4pc auto;
-    height: 200px;
-    width: 900px;
-
-
+    min-height: 200px;
+    min-width: 200px;
     /* border: 3px dashed wheat ; */
+    
 }
 
 section h1{
@@ -124,17 +122,19 @@ section p{
 .Box{
     /* border: 3px dashed orangered; */
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    top:14px;
+    /* position: relative; */
+    /* top:0px; */
+    text-transform: capitalize;
+    text-indent: 6px;
+    text-align: justify;
 }
 
 .block{
     color:pink;
     /* border: 3px dashed pink; */
     width: 900px;
-    height: 250pc;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     margin: 0px 10px;
@@ -155,12 +155,25 @@ section p{
     color:orange;
     border: 2px dashed gray;
     border-radius: 12px;
-    padding: 4px;
+    padding: 10px;
+    /* list-style-position: inside; */
+    /* list-style: none; */
+
 }
+/* .block li::before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-image: url('/img/rightArrow.png');
+    background-size: contain;
+  } */
+
+
 
 .block p{
-    /* border: 2px dashed red; */
-    padding: 5px;
+    border: 2px dashed red;
+    padding: 10px;
     margin: 5px;
     display: flex;
     justify-content: center;
