@@ -3,45 +3,8 @@
 /* o-----------------------------------------------------------------o */
 
 /* Naviagtion Bar  */
-#navbar{
-    display: flex;
-    flex-direction: column;
-}
-
 #navbar ul{
     display: flex;
     flex-direction: column;
 
-}
-
-
-/* o-----------------------------------------------------------------o */
-/* o---------------------------HOME Section--------------------------o */
-/* o-----------------------------------------------------------------o */
-
-/* HOME Section  */
-#home::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: url(/img/fire.jpg) no-repeat center center/cover;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    min-width: 100%;
-    min-height: 60%;
-    z-index: -1;
-    opacity: 0.84;
-    /* border: 2px solid red; */
-}
-#home{
-  
-    /* max-height: 385px; */
-    max-width: 100%;  
-    /* border: 2px dashed orangered; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
 }
