@@ -1,0 +1,261 @@
+/* CSS reset */
+*{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* o-----------------------------------------------------------------o */
+/* o---------------------------Naviagtion Bar------------------------o */
+/* o-----------------------------------------------------------------o */
+
+/* Naviagtion Bar  */
+#navbar::before{
+    content: "";
+    background-color: rgb(17, 10, 10);
+    /* border-radius: 15px; */
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+} 
+#navbar div img{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-color: rgb(211, 184, 133);
+    border-radius: 100px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(247, 232, 210);
+    padding: 5px 16px;
+    margin: 0px 10px;
+    display: block;
+    font-weight: bold;
+    /* border: 2px dashed red; */
+}
+#navbar ul li a:hover , #navbar ul li  #active{
+    color: rgb(187, 153, 90);
+    background-color: rgb(48, 43, 43);
+    border-radius: 12px;
+    /* border: 2px dashed black; */
+}
+
+/* o-----------------------------------------------------------------o */
+/* o---------------------------HOME Section--------------------------o */
+/* o-----------------------------------------------------------------o */
+
+/* HOME Section  */
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(/img/fire.jpg) no-repeat center center/cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 400px;
+    min-width: 100%;
+    min-height: 60%;
+    z-index: -1;
+    opacity: 0.84;
+    /* border: 2px solid red; */
+}
+#home{
+  
+    /* max-height: 385px; */
+    max-width: 100%;  
+    /* border: 2px dashed orangered; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 75px;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    /* font-family: 'Pacifico', cursive; */
+    /* border: 2px dashed black; */
+}
+#home  p{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    /* border: 2px solid red; */
+}
+
+/* o-----------------------------------------------------------------o */
+/* o------------------------Services Classes-------------------------o */
+/* o-----------------------------------------------------------------o */
+
+/* Services Classes */
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 5px;
+    background-color: rgb(209, 147, 76);
+    border-radius: 20px;
+    /* border: 2px dashed blue; */
+}
+#services .box{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: rgb(252, 244, 217);
+    /* border: 3px dashed black; */
+    /* opacity: .8; */
+}
+.services-container #s1{
+    margin: 10px auto;
+    max-width: 50pc;
+    border-radius: 22px;
+    background-color: rgb(209, 147, 76);
+}
+.services-container #services .box img{
+    width: 200px;
+    height: 150px;
+    border-radius: 22px;
+    display: block;
+    margin: auto;
+}
+
+/* o-----------------------------------------------------------------o */
+/* o-------------------------Client Section--------------------------o */
+/* o-----------------------------------------------------------------o */
+
+
+/* Client Section  */
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: rgb(209, 147, 76);
+    border-radius: 20px;
+    max-width: 65pc;
+    /* border: 2px dashed blue; */
+}
+.client-Section #s2{
+    margin: 10px auto;
+    max-width: 50pc;
+    border-radius: 22px;
+    background-color: rgb(209, 147, 76);
+}
+.client-Section .clientsItems{
+    padding: 15px;
+    margin: 8px;
+    border-radius: 42px;
+    background-color: rgb(252, 244, 217);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* border: 4px dashed red; */
+    /* opacity: .8; */
+}
+.client-Section .clientsItems img{ 
+    margin: 4px;
+    width: 9pc;
+    height: 9pc;
+    /* border: 4px dashed red; */
+}
+
+/* o-----------------------------------------------------------------o */
+/* o-------------------------Contact Section-------------------------o */
+/* o-----------------------------------------------------------------o */
+
+/* Contact Section  */
+.contact{
+    margin: 22px;
+    padding: 12px;
+    background-color: rgb(209, 147, 76);
+    border-radius: 18px;
+    /* border: 2px solid salmon; */
+}
+.contact-box .form-grp div{
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 2px;
+    padding: 5px;
+    width:12pc;
+}
+
+.contact-box .form-grp input{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+
+/* o-----------------------------------------------------------------o */
+/* o--------------------------Utility Class--------------------------o */
+/* o-----------------------------------------------------------------o */
+
+
+/* Utility Class */
+.h-primary{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.4rem;
+    padding: 5px;
+}
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 5px;   
+}
+.btn{
+    width: 65px;
+    padding:6px 2px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    background-color: rgb(218, 182, 117);
+    margin: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(189, 151, 81);
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+/* .pil-Heading{
+    margin: 10px auto;
+    max-width: 50pc;
+    border-radius: 22px;
+    background-color: rgb(209, 147, 76);
+} */
+/* .pil-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(209, 147, 76);
+    border-radius: 20px;
+    border: 2px dashed blue;
+} */
