@@ -11,6 +11,10 @@
     --navbar-height: 60px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* o-----------------------------------------------------------------o */
 /* o---------------------------Naviagtion Bar------------------------o */
 /* o-----------------------------------------------------------------o */
@@ -30,7 +34,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
 } 
 #navbar div img{
